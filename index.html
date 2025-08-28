@@ -195,6 +195,12 @@
 
             return (
                 <div className="min-h-screen">
+                    <nav className="bg-white shadow">
+                        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-end space-x-4">
+                            <a href="#contact-form" className="text-blue-600 hover:underline">Formulari de contacte</a>
+                            <a href="#contacte" className="text-blue-600 hover:underline">Contacte</a>
+                        </div>
+                    </nav>
                     <header className="header-gradient text-white p-8 text-center rounded-b-3xl shadow-lg">
                         <div className="max-w-4xl mx-auto">
                             <h1 className="text-4xl md:text-5xl font-bold mb-2">Projecte Sonda Estratosfèrica</h1>
@@ -218,6 +224,25 @@
                                 </div>
                             </section>
                         ))}
+
+                        <section id="contact-form" className="mb-12">
+                            <div className="phase-card p-6 md:p-8">
+                                <h2 className="text-3xl font-bold text-blue-900 mb-4">Formulari de contacte</h2>
+                                <form className="space-y-4">
+                                    <input type="text" placeholder="Nom" className="w-full border border-gray-300 p-2 rounded" />
+                                    <input type="email" placeholder="Correu electrònic" className="w-full border border-gray-300 p-2 rounded" />
+                                    <textarea placeholder="Missatge" className="w-full border border-gray-300 p-2 rounded h-32"></textarea>
+                                    <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Envia</button>
+                                </form>
+                            </div>
+                        </section>
+
+                        <section id="contacte" className="mb-12">
+                            <div className="phase-card p-6 md:p-8">
+                                <h2 className="text-3xl font-bold text-blue-900 mb-4">Contacte</h2>
+                                <p className="text-gray-600">Si tens qualsevol dubte, escriu-nos a <a href="mailto:info@example.com" className="text-blue-600">info@example.com</a>.</p>
+                            </div>
+                        </section>
                     </main>
 
                     <footer className="bg-gray-800 text-white text-center p-6 mt-12">
